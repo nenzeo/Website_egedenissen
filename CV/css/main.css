@@ -1,16 +1,6 @@
 
-FONTS
-*******************************************/
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800);
-/*******************************************
-SETTINGS
-*******************************************/
-@charset "utf-8";
-@-webkit-viewport   { width: device-width; }
-@-moz-viewport      { width: device-width; }
-@-ms-viewport       { width: device-width; }
-@-o-viewport        { width: device-width; }
-@viewport           { width: device-width; }
+
 /*******************************************
 BODY
 *******************************************/
@@ -28,17 +18,18 @@ CONTAINER
   margin-top: 80px;
   margin-bottom: 15px;
   background: #fff;
+  width: 1200px !important;
 }
 /*******************************************
 PHOTO (AVATAR)
 *******************************************/
 #photo-header{
-  margin-top: -75px;
+  margin-top: 0px;
 }
 #photo{
   width: 160px;
   height: 160px;
-  border-radius: 50%;
+  border-radius: 16px;
   overflow: hidden;
   padding: 5px;
   background: #ededed;
@@ -47,7 +38,7 @@ PHOTO (AVATAR)
 #photo img{
   width: 150px;
   height: 150px;
-  border-radius: 50%;
+  border-radius: 16px;
 }
 #text-header h1{
   margin: 0;
@@ -96,6 +87,7 @@ DEFAULT BOX
 .box p{
   font-size: 1.3em;
   line-height: 1.5em;
+  text-indent: 2em;
 }
 /*******************************************
 EDUCATION
@@ -138,6 +130,7 @@ EDUCATION
   display: inline-block;
 }
 #education .description{
+  border-radius: 8px;
   width: 80%;
   display: inline-block;
   background: #eee;
@@ -273,16 +266,25 @@ SKILLS
   background: #c6c6c6;
 }
 .legend-left.legend:before{
-  margin-left: 0;
+  margin-left: 70;
+}
+.legend-center.legend:before{
+  margin-left: 95;
 }
 .legend-right.legend:before{
-  margin-right: 0;
+  margin-right: -45;
 }
 .legend-left:nth-child(2) span{
   margin-left: -25px;
 }
 .legend-right:nth-child(3) span{
-  margin-right: -20px;
+  margin-right: -25px;
+}
+.legend-left{
+  text-align: center;
+}
+.legend-center{
+  text-align: right;
 }
 .legend-right{
   text-align: right;
@@ -308,6 +310,7 @@ LANGUAGES
 HOBBIES
 *******************************************/
 .hobby{
+  border-radius: 8px;
   color: #fff;
   display: inline-block;
   margin-right: 5px;
@@ -325,27 +328,4 @@ HOBBIES
   position: absolute;
   top: 6px;
   left: 7px;
-}
-/*******************************************
-MEDIA
-*******************************************/
-@media (min-width: 500px) {
-  #education .description{
-    width: 85%;
-  }
-}
-@media (min-width: 768px) {
-  #education .description{
-    width: 85%;
-  }
-}
-@media (min-width: 992px) {
-  #education .description{
-    width: 87%;
-  }
-}
-@media (min-width: 1200px) {
-  #education .description{
-    width: 90%;
-  }
 }
